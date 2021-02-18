@@ -56,6 +56,11 @@ int main(void) {<br/>
 }
 </p></div>
 `,
+	"Clojure": `
+<div class="code" id="clojure"><p>
+(println "Hello, world!")
+</p></div>
+`,
 	"COBOL": `
 <div class="code" id="cobol"><p>
 IDENTIFICATION DIVISION.<br/>
@@ -63,6 +68,20 @@ PROGRAM-ID hello-world.<br/>
 PROCEDURE DIVISION.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;DISPLAY "Hello, world!"<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;.
+</p></div>
+`,
+	"Common Lisp": `
+<div class="code" id="common lisp"><p>
+(print "Hello, world!")
+</p></div>
+`,
+	"D": `
+<div class="code" id="d"><p>
+import std.stdio;<br/>
+<br/>
+void main() {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;writeln("Hello, world!");<br/>
+}
 </p></div>
 `,
 	"Fortran 90": `
@@ -128,6 +147,24 @@ puts 'Hello, world!'
 	"Smalltalk": `
 <div class="code" id="smalltalk"><p>
 Transcript show: 'Hello, world!'.
+</p></div>
+`,
+	"x86 Assembly": `
+<div class="code" id="x86 assembly"><p>
+&nbsp;&nbsp;&nbsp;&nbsp;global&nbsp;&nbsp;&nbsp;&nbsp;_start<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;section&nbsp;&nbsp;&nbsp;&nbsp;.text<br/>
+_start:&nbsp;&nbsp;&nbsp;&nbsp;mov&nbsp;&nbsp;&nbsp;&nbsp;rax, 1<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;mov&nbsp;&nbsp;&nbsp;&nbsp;rdi, 1<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;mov&nbsp;&nbsp;&nbsp;&nbsp;rsi, msg<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;mov&nbsp;&nbsp;&nbsp;&nbsp;rdx, 13<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;syscall<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;mov&nbsp;&nbsp;&nbsp;&nbsp;rax, 60<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;xor&nbsp;&nbsp;&nbsp;&nbsp;rdi, rdi<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;syscall<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;section&nbsp;&nbsp;&nbsp;&nbsp;.data<br/>
+msg:&nbsp;&nbsp;&nbsp;&nbsp;db&nbsp;&nbsp;&nbsp;&nbsp;"Hello, world!", 10
 </p></div>
 `,
 };
