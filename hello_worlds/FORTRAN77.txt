@@ -1,0 +1,4 @@
+PROGRAM HELLOWORLD
+	PRINT '(A)', 'Hello, world!'
+	STOP
+END
