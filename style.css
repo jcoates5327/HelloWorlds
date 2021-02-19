@@ -4,9 +4,8 @@ body {
 
 #div-main {
 	margin: auto;
-	width: 35%;
 	min-height: 500px;
-	min-width: 500px;
+	max-width: 800px;
 	border: 2px solid black;
 	text-align: center;
 	position: relative;
@@ -19,6 +18,8 @@ body {
 	font-family: "Consolas", "Courier New", "Lucida Console", monospace;
 	text-align: left;
 	padding-left: 20px;
+	padding-right: 20px;
+	word-break: break-word;
 }
 
 #div-btn {
